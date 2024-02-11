@@ -1,0 +1,34 @@
+
+
+   public class Cliente {
+       public String nome;
+       private int ano_nascimento;
+       protected float consumo;
+
+       public int getAno_nascimento() {
+           return ano_nascimento;
+       }
+
+       public void setAno_nascimento(int ano_nascimento) throws Exception{
+           if((getAno_nascimento()<1950)||(getAno_nascimento()>2005)){
+               throw new Exception("O ano de nascimento está invaalido!");
+           }
+           this.ano_nascimento = ano_nascimento;
+       }
+   }
+   public class Base {
+
+    public static void main(String[] args) {
+        Cliente cliente = new Cliente();
+        cliente.nome="Igor";
+        System.out.println("meu nome é: " + cliente.nome);
+        cliente.consumo = 1090;
+        System.out.println("Meu consumo é: "+ cliente.consumo);
+        try {
+            cliente.setAno_nascimento(2006);
+            System.out.println("O ano de nascimento é: " + cliente.getAno_nascimento());
+        }catch(Exception e){
+            System.err.println(e.getMessage());
+        }
+    }
+}

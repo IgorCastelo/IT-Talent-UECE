@@ -23,7 +23,7 @@ public class Entrada_Matrizes {
                 System.out.println(matriz[i][j]+" ");
             }
             System.out.println();
-            float f = sc.nex
+
         }
 
         scanner.close();

@@ -22,7 +22,6 @@ public class Matriz {
         matrizRec[2]= new int [1];
         matrizRec[3]= new int [9];
 
-        System.out.println(matriz.);
         for (int i = 0; i<matriz.length; i++){
             for (int j =0; j< matriz.length; j++){
                 matriz[i][j] = i+j;

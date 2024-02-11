@@ -1,6 +1,6 @@
 public class Vetores_Numeros {
     public static void main(String[] args) {
-         blofinaly dentro do try catch]
+         int  v [] =new int [4];
 
         v[0]=1;
         v[1]=2;
@@ -15,10 +15,9 @@ public class Vetores_Numeros {
         Integer numeros[]= {1,2,3,4,5,6,7,8,9};
         for (int i = 0; i<numeros.length; i++){
             System.out.println("A posição "+ (i+1)+" do vetor numeros é: " + numeros[i]);
-            System.out.println(Math.pow(2,3));
-            String nomes [] = new String[3];
 
-            float f = sc.next
-        }
+
+
+                    }
     }
 }
